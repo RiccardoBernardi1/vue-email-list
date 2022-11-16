@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue Email List</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
-    
+    <div id="app">
+        <h1>Lista mail</h1>
+        <ul>
+            <li v-for="email in emails">{{email}}</li>
+        </ul>
+    </div>
     <script src="js/main.js"></script>
 </body>
 </html>
